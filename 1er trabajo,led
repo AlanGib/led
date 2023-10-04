@@ -1,6 +1,6 @@
 
 
-int ledPin = 13;                 
+int ledPin = 13;   //Se conecta en la tarjeta Arduino el anodo en el pin 13             
 
 void setup()
 {
