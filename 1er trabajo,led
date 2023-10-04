@@ -2,15 +2,15 @@
 
 int ledPin = 13;   //Se conecta en la tarjeta Arduino el anodo en el pin 13             
 
-void setup()
+void setup()   //Se define el tipo de variable
 {
-  pinMode(ledPin, OUTPUT);     
+  pinMode(ledPin, OUTPUT);     //Se declara que la variable led es de salida, donde OUTPUT declara que la salida es del pin 13
 }
 
-void loop()
+void loop()          //Dentro del loop se establecen las instrucciones a seguir del Arduino
 {
-  digitalWrite(ledPin, HIGH);   
-  delay(1000);                  
-  digitalWrite(ledPin, LOW);    
+  digitalWrite(ledPin, HIGH);   //DigitalWrite es el comando para encender led, HIGH es para encender el pin
+  delay(1000);                  //Permite retrasar el tiempo que se le indique hasta la siguiente instrucción
+  digitalWrite(ledPin, LOW);    //Se indica una señal baja para apagarlo con LOW y nuevamente el delay
   delay(1000);                  
 }
